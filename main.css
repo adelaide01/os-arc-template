@@ -35,6 +35,30 @@ h1.heavy-text, .h5 .heavy-text{
     display: none !important;
 }
 
+/* this removes the old headline, old byline, and old social media icons*/
+#top .pb-layout-item{
+    display:none;
+} 
+
+/*nav bar elements */
+
+.flex{
+    flex:none;
+}
+
+#app-bar-search-button, #app-bar-topics-button{
+    display: none;
+}    
+
+.login-subscribe{
+    display: none;    
+}
+
+.flex-container-row:nth-child(2){
+    display: none;
+}
+
+/* nav bar elements end */
 
 span.roadblock{
     display:none;
@@ -49,6 +73,9 @@ span.roadblock{
 .cs__ctn__border-bottom{
     border-bottom: none;
 }
+
+/*nav bar*/
+
     
 @media (min-width: 800px){
     .crd--cnt{
@@ -83,13 +110,6 @@ span.roadblock{
         margin-right: 15%;
     }
     
-    .pb-layout-item .pb-f-article-header {
-        display:none;
-    }
-    header #top{
-        display:none;
-    }
-    
     #top .pb-layout-item{
         display:none;
     } 
@@ -104,6 +124,8 @@ span.roadblock{
         margin: 0px important!;
     }
 }
+
+
 
 @media (min-width:801px){
     .artcl--sect-tmpl{
@@ -121,12 +143,18 @@ span.roadblock{
 
 @media (min-width: 416px){
     /* .crd .crd--cnt undoes an existing style*/
-    .crd .crd--cnt, .crd .crd--cnt:last-child{
+    .crd .crd--cnt, .crd .crd--cnt{
         padding:0px !important;
     }
     .crd.crd-pll-lf{
         width:25%;
         float:right;
+    }
+}
+
+@media (max-width: 570px){
+    .flex .flex-container-row .align-items-center{
+        display: none;
     }
 }
 </style>
