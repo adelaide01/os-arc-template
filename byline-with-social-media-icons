@@ -1,20 +1,33 @@
 <style>
-@media (max-width:799px){
+@media (min-width: 800px){
     .bylined{
-        display:none;
+        margin-left: 15%;
+    }
+    .sharebar2{
+        margin-left: 40%;
+    }
+}    
+
+@media (max-width: 416px){
+    .sharebar2{
+        margin-left: 29%;
     }
 }
 
-@media (min-width: 800px){
-    .bylined{
-        display: block;
-        line-height: 1.1em;
-        margin: 0% 15%;
+@media (min-width: 417px) and (max-width: 799px){
+    .sharebar2{
+        margin-left: 40%;
     }
-    .bylined p {
-        font-family: 'encode-regular' !important;
-        font-size: 1.2em;
-    }
+}
+
+.bylined{
+    display: block;
+    line-height: 1.1em;
+}
+
+.bylined p {
+    font-family: 'encode-regular' !important;
+    font-size: 1.2em;
 }
 
 *:focus:not(.focus-visible) {
@@ -38,12 +51,9 @@
 
 .sharebar2{
     display: inline-block;
-    margin-left: 40%;
     margin-top: 2%;
     position: relative;
 }
-
-
 </style>
 
 <div class="bylined">
@@ -55,5 +65,6 @@
 <button onclick="window.open( 'https://twitter.com/intent/tweet?text=Focus+on+Force&url=http://interactive.orlandosentinel.com/focus-on-force/main/index.html', 'share_popup', 'height=350,width=320' ); return false;" class="btn btn-twitter" type="button";></button>
 </span>
 
-<p>By Rene Stutzman and Charles Minshew, Orlando Sentinel</p>
+<p><b>By Rene Stutzman and Charles Minshew</b></p>
+<p id="pubdate">Orlando Sentinel | Oct. 27, 2019 | Updated Oct. 28, 2019, 4:18 p.m.</p>
 </div>
