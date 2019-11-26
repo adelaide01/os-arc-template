@@ -1,33 +1,182 @@
 <style>
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+#special-report span, #story-desc span{
+  color: #FFFFFF !important;
+  font-family: Arial, sans-serif;
 }
-.video-responsive > video{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    z-index: 1;
-}
-.video-responsive > .video-overlay {
-    background: rgba(39,62,84,0.82);
-    z-index: 10;
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-</style>
 
-<div class="video-responsive">
-  <div class="video-overlay"></div>
-     <video autoplay width="400">
-           <source src="http://content.orlandosentinel.com/gifs/gif-converted-video.mp4" type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-     </video>
-</div>
+#special-report span{
+  border: 1px solid purple;
+  padding: 0px 4px;
+}
+
+#story-desc span{
+  font-size: 1.3em;
+  letter-spacing: -1px;
+}
+
+#title-block{
+   display:grid;
+   align-items:center;
+   justify-items:center;
+  position:absolute;
+}
+
+#story-desc{
+   padding: 0% 5%;
+}
+
+#headline-overlay{
+   color: #FFFFFF;
+}
+
+ #title-block-container{ 
+     background-color: #333; 
+     color: #FFFFFF;
+     width:100%; 
+     position:relative;
+ }
+
+@media (max-width:599px){
+   #title-block-container img {display:none; }
+   #headline-overlay{font-size: 3.4rem;}
+   #title-block{grid-template-rows: 10% 16% 5% 15% 45% 5% 5%; height:380px; top:0%;}
+   #story-desc{ padding: 0% 9%;}
+   #story-desc span{font-size:1em;}
+   #special-report span{font-size:1.1em;}
+   #title-block-container{top:0%; height:425px;}
+  }
+
+@media (min-width: 600px) and (max-width: 999px){
+   #lead-image img{display: block;}
+   #title-block{width: 80%; left:10%;}
+   #story-desc span{font-size:1.4em;}
+   #headline-overlay span{font-size:5rem;}
+   #arrow:after, #arrow:before {width: 3px; height: 36px;}
+   #arrow:before {
+    -webkit-transform: translate(12px,0) rotate(45deg);
+    -moz-transform: translate(12px,0) rotate(45deg);
+    -ms-transform: translate(12px,0) rotate(45deg);
+    -o-transform: translate(12px,0) rotate(45deg);
+    transform: translate(12px,0) rotate(45deg);
+  }
+
+  #arrow:after {
+    -webkit-transform: translate(-13px,0) rotate(-45deg);
+    -moz-transform: translate(-13px,0) rotate(-45deg);
+    -ms-transform: translate(-13px,0) rotate(-45deg);
+    -o-transform: translate(-13px,0) rotate(-45deg);
+    transform: translate(-13px,0) rotate(-45deg);
+  }
+ }
+
+@media (min-width: 600px) and (max-width: 799px){
+  #title-block{height:29vh; top:6%;}
+  #headline-overlay span{font-size: 4.2rem;}
+  #part-number{font-size:2.4rem;}
+  #story-desc span{font-size:1em;}
+  #special-report span{font-size: 1.2em;}
+}
+
+@media (min-width: 800px) and (max-width: 999px){
+  #title-block{height:48vh; top:-4%;}
+  #headline-overlay span{font-size: 6rem;}
+  #part-number{font-size:2.4rem;}
+  #story-desc span{font-size:1.3em;}
+  #special-report span{font-size: 1.2em;}
+}
+
+@media (min-width: 1000px) and (max-width: 1299px){
+ #lead-image img{display: block;}
+  #story-desc span{ font-size:1.6em; line-height:1.5em;}
+  #title-block{height:52vh; width: 80%; top:10%;left:10%;}
+  #headline-overlay span{font-size:7rem;}
+  #part-number span{font-size:1.5em;}
+  #special-report span{font-size: 1.5em;}
+   #arrow:after, #arrow:before {width: 7px; height: 40px;}
+
+#arrow:before {
+    -webkit-transform: translate(12px,0) rotate(45deg);
+    -moz-transform: translate(12px,0) rotate(45deg);
+    -ms-transform: translate(12px,0) rotate(45deg);
+    -o-transform: translate(12px,0) rotate(45deg);
+    transform: translate(12px,0) rotate(45deg);
+}
+
+#arrow:after {
+    -webkit-transform: translate(-13px,0) rotate(-45deg);
+    -moz-transform: translate(-13px,0) rotate(-45deg);
+    -ms-transform: translate(-13px,0) rotate(-45deg);
+    -o-transform: translate(-13px,0) rotate(-45deg);
+    transform: translate(-13px,0) rotate(-45deg);
+  }
+}
+
+@media (min-width: 1300px){
+  #story-desc span{ font-size:1.6em; line-height:1.5em;}
+  #title-block{height:75vh; width: 80%; top:3%;left:12%;}
+  #headline-overlay span{font-size:13rem;}
+  #part-number span{font-size:2em;}
+  #special-report span{font-size: 2em;}
+   #arrow:after, #arrow:before {width: 7px; height: 55px;}
+#arrow:before {
+    -webkit-transform: translate(17px,0) rotate(45deg);
+    -moz-transform: translate(17px,0) rotate(45deg);
+    -ms-transform: translate(17px,0) rotate(45deg);
+    -o-transform: translate(17px,0) rotate(45deg);
+    transform: translate(17px,0) rotate(45deg);
+}
+
+#arrow:after {
+    -webkit-transform: translate(-18px,0) rotate(-45deg);
+    -moz-transform: translate(-18px,0) rotate(-45deg);
+    -ms-transform: translate(-18px,0) rotate(-45deg);
+    -o-transform: translate(-18px,0) rotate(-45deg);
+    transform: translate(-18px,0) rotate(-45deg);
+  }
+
+}
+
+@media (max-width:435px){
+  #story-desc span{font-size:1em;}
+  #title-block{grid-template-rows: 10% 16% 5% 15% 45% 5% 5%; height:380px; top:0%;}
+
+#arrow:before {
+    -webkit-transform: translate(7px,0) rotate(45deg);
+    -moz-transform: translate(7px,0) rotate(45deg);
+    -ms-transform: translate(7px,0) rotate(45deg);
+    -o-transform: translate(7px,0) rotate(45deg);
+    transform: translate(7px,0) rotate(45deg);
+}
+
+#arrow:after {
+    -webkit-transform: translate(-7px,0) rotate(-45deg);
+    -moz-transform: translate(-7px,0) rotate(-45deg);
+    -ms-transform: translate(-7px,0) rotate(-45deg);
+    -o-transform: translate(-7px,0) rotate(-45deg);
+    transform: translate(-7px,0) rotate(-45deg);
+  }
+}
+
+#arrow:after, #arrow:before {
+    content: "";
+    position: absolute;
+    background-color: #FFFFFF;
+}
+
+
+
+</style>
+<div id="title-block-container">
+   <img width="100%" height="auto" src="https://arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/TSOOUD6FEJA33OULRMM2QFVFCU.jpg" />
+
+<div id="title-block">
+
+<div></div>
+<div id="special-report"><span>SPECIAL REPORT</span></div>
+<div id="part-number"><span>– Part 1 –</span></div>
+<div id="headline-overlay"><span>Focus on Force</span></div>
+<div id="story-desc"><span>The Orlando Police Department used force 3,100 times from 2010 to 2014 - more than double the rate of some similarly sized agencies. The city and its insurer paid $3.6 million in police-brutality claims.</span></div>
+<div id="arrow"></div>
+<div></div>
+</div> <!--title-block-->
+</div> <!--title-block-container-->
