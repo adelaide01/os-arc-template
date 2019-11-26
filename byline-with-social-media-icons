@@ -16,7 +16,7 @@
 
 @media (min-width: 417px) and (max-width: 799px){
     .sharebar2{
-        margin-left: 40%;
+        margin-left: 37%;
     }
 }
 
@@ -26,7 +26,6 @@
 }
 
 .bylined p {
-    font-family: 'encode-regular' !important;
     font-size: 1.2em;
 }
 
@@ -38,7 +37,7 @@
 	cursor: pointer;
 	width: 70px;
 	height: 70px;
-	background-color: #D3992B;
+	background-color: #000000;
 	border-radius: 50%;
 }
 .btn-twitter:before{
