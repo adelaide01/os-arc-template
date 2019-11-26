@@ -1,11 +1,21 @@
 <script>
     const dropdownMenu = document.querySelector('.flex-container-row:first-child');
-    dropdownMenu.innerHTML = '<input type="checkbox" id="expand-toggle"/><label for="expand-toggle" id="expand-btn">&#9776; LaborLand</label><table><tbody><tr class="expandable"><td><span class="hed">Insert headline 1 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr><tr class="expandable"><td><span class="hed">Insert headline 1 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr><tr class="expandable"><td><span class="hed">Insert headline 3 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr><tr class="expandable"><td><span class="hed">Insert headline 4 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr></tbody></table>';
+    dropdownMenu.innerHTML = '<input type="checkbox" id="expand-toggle"/><label for="expand-toggle" id="expand-btn"><img width="105px" height="auto" src="https://content.orlandosentinel.com/tourism/misc/menu-laborland-logo.png"/></label><table><tbody><tr class="expandable"><td><span class="hed">Insert headline 1 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr><tr class="expandable"><td><span class="hed">Insert headline 1 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr><tr class="expandable"><td><span class="hed">Insert headline 3 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr><tr class="expandable"><td><span class="hed">Insert headline 4 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr></tbody></table>';
 </script>
 
 <style>
   
 body{overflow-x:hidden;}
+/*  headline*/
+.guttered > .pb-container{ 
+   margin-top:0px !important;
+   margin-bottom: 0px !important;
+  }
+
+.padded-container{
+	padding:0% !important;
+  }
+}
 
 /* nav bar dropdown menu */
 
@@ -207,6 +217,19 @@ span.roadblock{
         margin-top: 5% !important;
         margin-bottom: 5% !important;
     }
+
+    .crd .crd--cnt{
+        padding:0%;
+    }
+
+    .crd .crd--cnt:last-child{
+        padding:0% 0% 10% 0%;
+    }
+
+    .clln--it{
+        padding: 0% 4%;
+    }
+
     table > tbody > tr > td > span:not(.descriptor){
     font-size: 1.2em;
     }
