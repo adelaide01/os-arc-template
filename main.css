@@ -1,9 +1,18 @@
 <script>
     const dropdownMenu = document.querySelector('.flex-container-row:first-child');
-    dropdownMenu.innerHTML = '<input type="checkbox" id="expand-toggle"/><label for="expand-toggle" id="expand-btn"><img width="105px" height="auto" src="https://content.orlandosentinel.com/tourism/misc/menu-laborland-logo.png"/></label><table><tbody><tr class="expandable"><td><span class="hed">Insert headline 1 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr><tr class="expandable"><td><span class="hed">Insert headline 1 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr><tr class="expandable"><td><span class="hed">Insert headline 3 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr><tr class="expandable"><td><span class="hed">Insert headline 4 here</span><br/><span class="descriptor">Mauris nunc congue nisi vitae suscipit tellus mauris. Hac habitasse platea dictumst quisque sagittis purus. Nec nam aliquam sem et tortor consequat. </span></td></tr></tbody></table>';
+    dropdownMenu.innerHTML = '<input type="checkbox" id="expand-toggle"/><label for="expand-toggle" id="expand-btn"><img width="125px" height="auto" src="https://content.orlandosentinel.com/tourism/misc/laborland-logo.png"/></label><table id="story-menu"><tbody><tr class="expandable"><td><span class="hed">Part 1: Life on low wages</span><br/><span class="descriptor"> In Orlando, where tourism is the top industry, workers make the lowest wages of the top 50 metropolitan areas in the nation.</span></td></tr><tr class="expandable"><td><span class="hed">Part 2: An affordable housing crisis</span><br/><span class="descriptor">Coming December 10</span></td></tr><tr class="expandable"><td><span class="hed">Part 3: Too few buses, not enough routes</span><br/><span class="descriptor">Coming December 12</span></td></tr><tr class="expandable"><td><span class="hed">Part 4: The tourism industry’s power</span><br/><span class="descriptor">Coming December 18</span></td></tr></tbody></table>';
 </script>
 
+
 <style>
+
+
+
+[data-tray="search"]{display:none;}
+
+#bx-creative-954609{
+    display: none;
+}
   
 body{overflow-x:hidden;}
 /*  headline*/
@@ -30,7 +39,7 @@ body{overflow-x:hidden;}
   background: #000000;
   text-align: center;
   cursor: pointer;
-  opacity: 0.87;
+  opacity: 0.9;
   transition: 0.5s;
 }
 
@@ -38,9 +47,13 @@ body{overflow-x:hidden;}
   background-color: #4d4d4d;    
 }
 
-table{
+#story-menu{
   width:100%;
   margin-top:40px;
+}
+
+#story-menu td{
+    border-bottom: 1px solid #FFFFFF;
 }
 
 table > tbody > tr > td > span:not(.descriptor){
@@ -115,17 +128,7 @@ h1.heavy-text, .h5 .heavy-text{
     flex:none;
 }
 
-#app-bar-search-button, #app-bar-topics-button{
-    display: none;
-}    
 
-.login-subscribe{
-    display: none;    
-}
-
-.flex-container-row:nth-child(2){
-    display: none;
-}
 
 /* nav bar elements end */
 
@@ -208,8 +211,10 @@ span.roadblock{
     font-size: 1.3em;       
     }
     table td{
-    padding:40px;
+    padding: 0px 40px;
+    height:22vh;
     }
+
 }    
 
 @media (max-width: 799px){
@@ -237,7 +242,8 @@ span.roadblock{
     font-size: 1em;       
     }
     table td{
-    padding:25px;
+    padding: 0px 25px;
+    height:20vh;
     }
 }    
 
@@ -253,8 +259,9 @@ span.roadblock{
 }
 
 @media (max-width: 570px){
-    .flex .flex-container-row .align-items-center{
-        display: none;
+    .crd.crd-pll-ri{
+        margin: 0px;
     }
+    table td{height:20vh;}
 }
 </style>
