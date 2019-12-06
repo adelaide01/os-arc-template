@@ -1,4 +1,4 @@
-<!--without animated gif, just static image-->
+
 
 <style>
 
@@ -196,7 +196,7 @@
 <div id="title-block">
 
 <!--10%--><div></div>
-<!--15%--><div id="special-report"><span>ORLANDO SENTINEL SPECIAL REPORT</span></div>
+<!--15%--><div id="special-report"><span>SPECIAL REPORT</span></div>
 <!--15%--><div id="part-number"><span>– Part 1 –</span></div>
 <!--50%--><div id="logo-overlay"><img src="https://content.orlandosentinel.com/tourism/explainer/laborland-logo.png"/></div>
 <!--10%--><div></div>
