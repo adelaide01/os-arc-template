@@ -55,15 +55,16 @@
 <div class= "sharebar2">
 <div><!--margin-left grid layout--></div>
 <div class="fb">
-<button onclick="window.open( 'https://www.facebook.com/sharer/sharer.php?u=https://www.orlandosentinel.com#', 'share_popup', 'height=350,width=320' ); return false;" class="btn btn-facebook" type="button";></button>
+<button onclick="window.open( 'https://www.facebook.com/sharer/sharer.php?u=https://www.orlandosentinel.com/business/tourism/laborland/os-bz-tourism-industry-disney-wages-20191205-46u5ykiro5cx3n25qronziiify-story.html#', 'share_popup', 'height=350,width=320' ); return false;" class="btn btn-facebook" type="button";></button>
 </div>
 <div class="tw">
-<button onclick="window.open( 'https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.orlandosentinel.com%2F&via=orlandosentinel&text=Laborland%3A%20In%20Orlando%2C%20where%20tourism%20is%20the%20top%20industry%2C%20workers%20make%20the%20lowest%20wages%20of%20the%20top%2050%20metro%20areas%20in%20the%20nation.&hashtags=laborland', 'share_popup', 'height=350,width=320' ); return false;" class="btn btn-twitter" type="button";></button>
+<button onclick="window.open( 'https://twitter.com/intent/tweet?url=https%3A%2F%2Fhttps://www.orlandosentinel.com/business/tourism/laborland/os-bz-tourism-industry-disney-wages-20191205-46u5ykiro5cx3n25qronziiify-story.html%2F&via=orlandosentinel&text=Laborland%3A%20In%20Orlando%2C%20where%20tourism%20is%20the%20top%20industry%2C%20workers%20make%20the%20lowest%20wages%20of%20the%20top%2050%20metro%20areas%20in%20the%20nation.&hashtags=laborland', 'share_popup', 'height=350,width=320' ); return false;" class="btn btn-twitter" type="button";></button>
 </div>
 <div><!--margin-right grid layout--></div>
 </div><!--end sharebar2-->
 <div class="bylined">
 <div><p><strong>By Chabeli Herrera</strong></p></div>
 <div><p id="pubdate">Orlando Sentinel | Dec. 5, 2019 | Updated Dec. 5, 2019, 10 a.m.</p></div>
+<div><p><strong><a href="https://www.orlandosentinel.com/elsentinel/parques/os-ex-turismo-disney-salarios-realidad-20191205-a5igc4xcpjhjxll7whkvgmlmz4-story.html">Read a Spanish-language translation of this story on El Sentinel</a></p></strong></p></div>
 </div>
 </div> <!--byline-block-->
