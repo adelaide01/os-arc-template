@@ -1,35 +1,11 @@
 <script>
-    const dropdownMenu = document.querySelector('.flex-container-row:first-child');
-    dropdownMenu.innerHTML = '<input type="checkbox" id="expand-toggle"/><label for="expand-toggle" id="expand-btn"><img width="125px" height="auto" src="https://content.orlandosentinel.com/tourism/misc/laborland-logo.png"/></label><table id="story-menu"><tbody><tr class="expandable"><td><span class="hed">Part 1: Life on low wages</span><br/><span class="descriptor"> In Orlando, where tourism is the top industry, workers make the lowest wages of the top 50 metropolitan areas in the nation.</span></td></tr><tr class="expandable"><td><span class="hed">Part 2: An affordable housing crisis</span><br/><span class="descriptor">Coming December 10</span></td></tr><tr class="expandable"><td><span class="hed">Part 3: Too few buses, not enough routes</span><br/><span class="descriptor">Coming December 12</span></td></tr><tr class="expandable"><td><span class="hed">Part 4: The tourism industry’s power</span><br/><span class="descriptor">Coming December 18</span></td></tr></tbody></table>';
+    const dropdownMenu = document.querySelector('#app-bar-topics-button');
+    dropdownMenu.innerHTML = '<input type="checkbox" id="expand-toggle"/><label for="expand-toggle" id="expand-btn"><img width="125px" height="auto" src="https://content.orlandosentinel.com/tourism/misc/laborland-logo.png"/></label><table id="story-menu"><tbody><tr class="expandable"><td><span class="hed">Part 1: Life on low wages</span><span class="descriptor"></span></td></tr><tr class="expandable"><td><span class="hed">Part 2: An affordable housing crisis</span><br/><span class="descriptor">Coming Dec. 10</span></td></tr><tr class="expandable"><td><span class="hed">Part 3: Too few buses, not enough routes</span><br/><span class="descriptor">Coming Dec. 12</span></td></tr><tr class="expandable"><td><span class="hed">Part 4: The tourism industry’s power</span><br/><span class="descriptor">Coming Dec. 18</span></td></tr></tbody></table>';
 </script>
 
 
 <style>
-
-
-
-[data-tray="search"]{display:none;}
-
-#bx-creative-954609{
-    display: none;
-}
-  
-body{overflow-x:hidden;}
-/*  headline*/
-.guttered > .pb-container{ 
-   margin-top:0px !important;
-   margin-bottom: 0px !important;
-  }
-
-.padded-container{
-	padding:0% !important;
-  }
-}
-
-/* nav bar dropdown menu */
-
-.app-bar-inner{padding:0px;}
-
+/* nav bar start */
 #expand-toggle {
   display: none;
 }
@@ -48,23 +24,25 @@ body{overflow-x:hidden;}
 }
 
 #story-menu{
-  width:100%;
+  width: 175px;    
   margin-top:40px;
+  margin-left:-15px;
 }
 
 #story-menu td{
     border-bottom: 1px solid #FFFFFF;
+    line-height: 1.75em;
 }
 
 table > tbody > tr > td > span:not(.descriptor){
-  font-family: Spectral-Bold,Arial,Helvetica,sans-serif;
-  font-weight:700;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight:400;
   color: #FFFFFF;
 }
 
 table > tbody > tr > td > span.descriptor{
   color:#FFFFFF;
-  font-family: Georgia,Arial,Helvetica,sans-serif;
+  font-family: Arial,Helvetica,sans-serif;
 }
 
 #expand-btn {
@@ -73,8 +51,8 @@ table > tbody > tr > td > span.descriptor{
   font-size: 1.7em;
   letter-spacing: -1px;
   cursor:pointer;
-  width:375px;
   position: absolute;
+  left:0px;
 }
 
 #expand-toggle:checked ~ * .expandable {
@@ -85,9 +63,59 @@ table > tbody > tr > td > span.descriptor{
 #expand-toggle:checked ~ #expand-btn {
   color: #FFFFFF;
 }
+/* nav bar end */
+
+.tray-open.visible {
+    visibility: hidden;
+}
+
+.tray-arrow-container .tray-arrow{
+    display: none;
+}
 
 
-/* nav dropdown menu end */
+#app-bar-topics-button{margin-top:-7px;}
+
+[data-type="recommender"], [data-tray="search"]{display:none;}
+
+#bx-creative-954609{
+    display: none;
+}
+  
+body{overflow-x:hidden;}
+/*  headline*/
+.guttered > .pb-container{ 
+   margin-top:0px !important;
+   margin-bottom: 0px !important;
+  }
+
+.padded-container{
+    padding:0% !important;
+  }
+}
+
+[data-type="recommender"]{
+    display: none;
+}
+
+.pb-f-article-author-bio .flex-container-row .align-items-stretch{
+    display: block;
+    width: 80%;
+}
+
+.pb-f-article-author-bio .flex-container-row .align-items-center{
+    display: block;    
+}
+
+.slider {
+    display: none;
+}
+
+
+.guttered .wrapper{
+    margin-top: 0px;
+}
+
 
 .crd--cnt{
     font: 400 18px/28px 'Spectral-Bold' !important;
@@ -205,13 +233,13 @@ span.roadblock{
         width: 100%;
     }
     table > tbody > tr > td > span:not(.descriptor){
-    font-size: 2.2em;
+    font-size: 1.4em;
     }
     table > tbody > tr > td > span.descriptor{
     font-size: 1.3em;       
     }
     table td{
-    padding: 0px 40px;
+    padding: 0px 10px;
     height:22vh;
     }
 
@@ -242,7 +270,7 @@ span.roadblock{
     font-size: 1em;       
     }
     table td{
-    padding: 0px 25px;
+    padding: 0px 10px;
     height:20vh;
     }
 }    
